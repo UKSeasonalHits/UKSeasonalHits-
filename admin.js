@@ -1,4 +1,4 @@
-const PASSWORD='change-me'; // CHANGE THIS before publishing
+const PASSWORD='frankstina'; // CHANGE THIS before publishing
 const $=id=>document.getElementById(id);
 let library=JSON.parse(localStorage.getItem('radioLibrary')||'[]');
 function render(){
