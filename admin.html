@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin — UK's Biggest Seasonal Hits</title><link rel="stylesheet" href="styles.css">
+</head>
+<body><header><div class="brand">🎛️ RADIO CONTROL ROOM</div><a class="admin-link" href="index.html">Public Site</a></header>
+<main class="admin">
+<section id="login" class="panel"><h1>Admin Login</h1><p>Demo login — change the password in admin.js before publishing.</p>
+<input id="password" type="password" placeholder="Admin password"><button id="loginBtn">Sign in</button><p id="loginMsg"></p></section>
+<div id="dashboard" hidden>
+<section class="panel"><div class="row"><div><h1>UK's Biggest Seasonal Hits</h1><p>Control your station without SQL.</p></div><button id="logoutBtn">Log out</button></div></section>
+<section class="grid">
+<div class="panel"><h2>📻 Stream</h2><label>Public stream URL<input id="streamUrl" placeholder="https://your-stream-url"></label><button id="saveStream">Save Stream</button><p class="hint">Use the public/player stream supplied by your radio host.</p></div>
+<div class="panel"><h2>📚 Music Library</h2><input id="search" placeholder="Search library"><input id="files" type="file" accept="audio/*" multiple><button id="addFiles">Add Audio Files</button><div id="library"></div></div>
+<div class="panel"><h2>▶️ Local Test Player</h2><audio id="localPlayer" controls></audio><p class="hint">This plays audio files selected by you in this browser. It does not upload or rebroadcast copyrighted music automatically.</p></div>
+<div class="panel"><h2>⚙️ Station</h2><label>Station name<input id="stationName" value="UK's Biggest Seasonal Hits"></label><button id="saveStation">Save Settings</button><p id="status"></p></div>
+</section></div></main><script src="admin.js"></script></body></html>
